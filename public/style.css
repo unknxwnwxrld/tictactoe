@@ -1,0 +1,102 @@
+body {
+font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #game-board {
+        background-color: #f5f5dc;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      #title {
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 50px;
+      }
+      #game {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 10px;
+      }
+      #button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .start-game-button {
+        background: #a370f0;
+        color: white;
+        font-family: inherit;
+        padding: 0.35em;
+        padding-left: 1.2em;
+        font-size: 17px;
+        font-weight: 500;
+        border-radius: 0.9em;
+        border: none;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        box-shadow: inset 0 0 1.6em -0.6em #714da6;
+        overflow: hidden;
+        position: relative;
+        height: 2.8em;
+        padding-right: 3.3em;
+        cursor: pointer;
+      }
+
+      .start-game-button .icon {
+        background: white;
+        margin-left: 1em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.2em;
+        width: 2.2em;
+        border-radius: 0.7em;
+        box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+        right: 0.3em;
+        transition: all 0.3s;
+      }
+
+      .start-game-button:hover .icon {
+        width: calc(100% - 0.6em);
+      }
+
+      .start-game-button .icon svg {
+        width: 1.1em;
+        transition: transform 0.3s;
+        color: #7b52b9;
+      }
+
+      .start-game-button:hover .icon svg {
+        transform: translateX(0.1em);
+      }
+
+      .start-game-button:active .icon {
+        transform: scale(0.95);
+      }
+
+      .cell {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .cell:hover {
+        background-color: #babaa6;
+        transition: 0.5s;
+      }
+      .message-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
